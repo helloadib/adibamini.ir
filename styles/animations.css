@@ -1,0 +1,98 @@
+.main-heading {
+  animation: instant-fadein 100ms ease-in 500ms 1 normal both;
+}
+
+.big-button {
+  animation: instant-fadein 100ms ease-in 1000ms 1 normal both;
+}
+
+.or-divider {
+  animation: instant-fadein 100ms ease-in 1500ms 1 normal both;
+}
+
+@keyframes instant-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button-container:last-of-type {
+  animation: drop-in 500ms linear 2000ms 1 normal both;
+}
+
+.button-container:first-of-type {
+  animation: drop-in 500ms linear 2100ms 1 normal both;
+}
+
+@keyframes drop-in {
+  0% {
+    transform: translateY(calc(-200% - 224px));
+  }
+  40% {
+    transform: translateY(32px);
+  }
+  60% {
+    transform: translateY(-16px);
+  }
+  80% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button-container:last-of-type .button-tooltip {
+  animation: raise-fadein 500ms ease-out 2600ms 1 normal both,
+    float 1000ms ease-out 3100ms infinite alternate;
+}
+
+.button-container:first-of-type .button-tooltip {
+  animation: raise-fadein 500ms ease-out 2700ms 1 normal both,
+    float 1000ms ease-out 3200ms infinite alternate;
+}
+
+@keyframes raise-fadein {
+  0% {
+    top: 200%;
+    opacity: 0;
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: calc(100% + 16px);
+  }
+}
+
+.main-heading i {
+  animation: loosen 300ms linear 3200ms 1 normal both;
+}
+
+@keyframes loosen {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(8deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}

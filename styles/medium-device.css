@@ -1,0 +1,21 @@
+.main-heading {
+  font-size: 48px;
+}
+
+.big-button:link,
+.big-button:visited {
+  margin: 64px auto;
+}
+
+.or-divider {
+  margin: 64px auto;
+}
+
+.button-bar {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.button-container:first-of-type {
+  margin-bottom: 112px;
+}
