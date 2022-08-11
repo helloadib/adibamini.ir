@@ -121,6 +121,7 @@ a:not([class]):active {}
   line-height: 1.5;
   font-weight: bold;
   color: #fefefe;
+  text-align: center;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.32);
 
   transition: transform 200ms;
@@ -176,7 +177,7 @@ a:not([class]):active {}
 .big-button:visited {
   max-width: 360px;
   min-height: 88px;
-  margin: 48px auto;
+  margin: 48px 36px;
 
   background-color: hsl(173, 77%, 31%);
   background-image: linear-gradient(to top, hsl(173, 77%, 31%), hsl(173, 77%, 41%));
