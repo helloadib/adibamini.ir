@@ -72,6 +72,9 @@ a:not([class]):active {}
 
   min-height: 100vh;
   padding: 32px 16px;
+
+  background-image: url(/images/background.jpg?v=1);
+  background-size: cover;
 }
 
 .main-container {
